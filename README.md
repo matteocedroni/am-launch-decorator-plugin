@@ -1,4 +1,4 @@
-# Debug plugin for AttractMode front end
+# Launch Decorator plugin for AttractMode front end
 
 by [Matteo Cedroni](https://github.com/matteocedroni)
 
