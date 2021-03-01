@@ -27,6 +27,10 @@ class LaunchDecorator {
 		extensions = split(config["scriptExtensions"], ",");
 	}
 
+	function withApex(value){
+		return "\"" + value + "\"";
+	}
+
 	function findScriptExtension(scriptName) {
 		foreach (ext in extensions) {
 			local script = fe.path_expand(scriptName + ext);
@@ -49,10 +53,10 @@ class LaunchDecorator {
 	}
 
 	function executeScript(script){
-		command = script + " " +fe.game_info(Info.Name) +" "+ fe.game_info(Info.Emulator);
+		command = withApex(script) +" "+ withApex(fe.game_info(Info.Name)) +" "+ withApex(fe.game_info(Info.Emulator));
 		print("execute -> " + command + "\n");
-		if ( OS == "Windows" ) fe.plugin_command( "cmd", "/c " + command);
-		else fe.plugin_command( "/bin/sh", "-c \"" + command);
+		if ( OS == "Windows" ) fe.plugin_command( "cmd", "/c " + withApex(command));
+		else fe.plugin_command( "/bin/sh", "-c " + withApex(command));
 	}
 
 	function onTransition( ttype, var, ttime ) {
