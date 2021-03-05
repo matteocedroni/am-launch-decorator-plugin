@@ -8,7 +8,7 @@ Launch decorator plugin is for the [AttractMode](http://attractmode.org) front e
 
 ## Install Files
 
-1. Copy LaunchDecorator folder to `plugins`.
+1. Copy plugin files to `plugins/LaunchDecorator`.
 
 ## Usage
 
