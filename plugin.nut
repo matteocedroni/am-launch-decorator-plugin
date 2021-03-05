@@ -55,7 +55,7 @@ class LaunchDecorator {
 	function executeScript(script){
 		command = withApex(script) +" "+ withApex(fe.game_info(Info.Name)) +" "+ withApex(fe.game_info(Info.Emulator));
 		print("execute -> " + command + "\n");
-		if ( OS == "Windows" ) fe.plugin_command( "cmd", "/c " + withApex(command));
+		if ( OS == "Windows" ) system( "cmd /c " + withApex(command));
 		else fe.plugin_command( "/bin/sh", "-c " + withApex(command));
 	}
 
