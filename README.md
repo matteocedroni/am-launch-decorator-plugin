@@ -8,7 +8,8 @@ Launch decorator plugin is for the [AttractMode](http://attractmode.org) front e
 
 ## Install Files
 
-1. Copy plugin files to `plugins/LaunchDecorator`.
+1. Download latest stable version [here](https://github.com/matteocedroni/am-launch-decorator-plugin/releases/latest)
+2. Copy plugin files to `plugins/LaunchDecorator`.
 
 ## Usage
 
@@ -48,3 +49,13 @@ Same behavior after game execution, with `after` token instead of `before`
 
 ## Notes
 LaunchDecorator can launch only files that are directly executable by OS command line shell. Depending of OS, you may need some action to make command line able to directly execute some scripts
+
+## Release notes
+
+### Version 1.0.1 (5th March 2021)
+
+* Changed launch function to prevent freezing AM (Thank you to user [hermine.potter](http://forum.attractmode.org/index.php?action=profile;u=77) for pointing this out)
+
+### Version 1.0.0 (28th Febrary 2021)
+
+* First version
