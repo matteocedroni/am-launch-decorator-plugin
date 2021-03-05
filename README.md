@@ -52,10 +52,10 @@ LaunchDecorator can launch only files that are directly executable by OS command
 
 ## Release notes
 
-### Version 1.0.1 (5th March 2021)
+### Version 1.0.1 (5th march 2021)
 
 * Changed launch function to prevent freezing AM (Thank you to user [hermine.potter](http://forum.attractmode.org/index.php?action=profile;u=77) for pointing this out)
 
-### Version 1.0.0 (28th Febrary 2021)
+### Version 1.0.0 (28th february 2021)
 
 * First version
